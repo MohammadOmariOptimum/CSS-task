@@ -33,27 +33,28 @@ body {
   border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1024px;
+  /* grid-template-rows: 1024px; */
+  height: 100vh;
 }
 
-.grid-item1,
-.grid-item2,
-.grid-item3 {
+.sedan,
+.suv,
+.luxury {
   align-items: center;
   background-color: var(--color-bg);
   display: flex;
   justify-content: center;
 }
 
-.grid-item1 {
+.sedan {
   background: var(--color-primary);
 }
 
-.grid-item2 {
+.suv {
   background: var(--color-secondary);
 }
 
-.grid-item3 {
+.luxury {
   background: var(--color-tertiary);
 }
 
@@ -98,17 +99,17 @@ img {
   width: var(--button-width);
 }
 
-.grid-item1 button:hover {
+.sedan button:hover {
   background: var(--color-bg);
   color: var(--color-primary);
 }
 
-.grid-item2 button:hover {
+.suv button:hover {
   background: var(--color-bg);
   color: var(--color-secondary);
 }
 
-.grid-item3 button:hover {
+.luxury button:hover {
   background: var(--color-bg);
   color: var(--color-tertiary);
 }
@@ -118,7 +119,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
-  .grid-item3 {
+  .luxury {
     grid-column: span 2;
   }
 
@@ -132,7 +133,7 @@ img {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 370px;
   }
-  .grid-item3 {
+  .luxury {
     grid-column: span 1;
   }
 }
